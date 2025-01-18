@@ -161,7 +161,7 @@ def fetch_github_files(repo_url, path="", token=None):
 @click.option("--github-repo", help="GitHub repository URL (e.g., https://github.com/username/repo.git)")
 @click.option("--github-path", default="", help="Path within the GitHub repository (default: entire repo)")
 @click.option("--github-token", envvar="GITHUB_TOKEN", help="GitHub personal access token")
-@click.option("extensions", "-e", "--extension", multiple=True)
+@click.option("-e", "--extension", "extensions", multiple=True)
 @click.option(
     "--include-hidden",
     is_flag=True,
