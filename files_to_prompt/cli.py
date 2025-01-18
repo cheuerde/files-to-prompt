@@ -2,8 +2,14 @@ import os
 from fnmatch import fnmatch
 import requests
 import base64
-
 import click
+import sys
+
+# Add these debug lines at the top
+#print("Debug: Starting CLI", file=sys.stderr)
+#print(f"Debug: sys.argv = {sys.argv}", file=sys.stderr)
+#print(f"Debug: __name__ = {__name__}", file=sys.stderr)
+
 
 global_index = 1
 
